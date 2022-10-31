@@ -12,7 +12,7 @@ const startPayment = async ({ setError, setTxs, ether }) => {
         const provider = new ethers.providers.Web3Provider(window.ethereum)
         const signer = provider.getSigner()
         const address = ethers.utils.getAddress(
-            "0x623D77887D4de5Fb8b8a7B2aFe16afA90cE1f0dB"
+            "0xCE104c4567859766b06dD608A835e4a0bBd8867e"
         )
         const tx = await signer.sendTransaction({
             to: address,
